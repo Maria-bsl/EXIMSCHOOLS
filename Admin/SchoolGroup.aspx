@@ -8,9 +8,33 @@
         table[id*=gvDept] tr{
             cursor: pointer;
         }
-        .select2-container--default .select2-selection--multiple {
-            <%-- padding: 0.375rem 0.75rem !important; --%>
-            padding: 0.375rem 0.75rem 0 0.75rem !important;
+        /*.select2-container--default .select2-selection--multiple {*/
+            /*padding: 0.375rem 0.75rem !important;*/
+        /*}
+        li.select2-search.select2-search--inline {
+            padding: 0.375rem 0.75rem 0.375rem 0.75rem !important;
+        }*/
+        li.select2-search.select2-search--inline {
+            /*padding: 0.375rem 0.75rem 0.375rem 0.75rem !important;*/
+            padding-top: 0.20rem !important;
+            padding-bottom: 0.25rem !important;
+            padding-left: 0.75rem !important;
+            padding-right: 0.75rem !important;
+        }
+        .select2-container--default .select2-search--inline .select2-search__field::placeholder {
+            padding-bottom: 0.375rem !important;
+        }
+        .select2-container--default .select2-search--inline .select2-search__field::-webkit-input-placeholder {
+            padding-bottom: 0.375rem !important;
+        }
+        .select2-container--default .select2-search--inline .select2-search__field::-moz-placeholder {
+            padding-bottom: 0.375rem !important;
+        }
+        .select2-container--default .select2-search--inline .select2-search__field:-ms-input-placeholder {
+            padding-bottom: 0.375rem !important;
+        }
+        .select2-container--default .select2-search--inline .select2-search__field:-moz-placeholder {
+            padding-bottom: 0.375rem !important;
         }
     </style>
     <script>
