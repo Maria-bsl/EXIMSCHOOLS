@@ -1,0 +1,551 @@
+/* ========== Text Styles ========== */
+hr { color: #000000}
+.main-content, .main-content table span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+}
+span.rvts7
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts8
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts9
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts10, span.rvts10
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts11
+{
+ font-size: 18pt;
+ font-family: 'Maiandra GD';
+ font-weight: bold;
+ color: #575f63;
+}
+span.rvts12
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+}
+span.rvts13
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-weight: bold;
+}
+span.rvts14 /* Font Style */
+{
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts15, span.rvts15 /* Font Style */
+{
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts16
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-weight: bold;
+ color: #00527f;
+}
+span.rvts17
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+}
+span.rvts18
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-style: italic;
+ font-weight: bold;
+ color: #00a5ff;
+}
+span.rvts19
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-weight: bold;
+ color: #00b0f0;
+}
+span.rvts20
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-weight: bold;
+ color: #00b0f0;
+}
+span.rvts21
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-style: italic;
+ font-weight: bold;
+ color: #00b0f0;
+}
+span.rvts22
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-weight: bold;
+}
+span.rvts23
+{
+ font-family: 'Book Antiqua', 'Palatino', serif;
+}
+a.rvts24, span.rvts24
+{
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts25
+{
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-weight: bold;
+}
+span.rvts26
+{
+ font-family: 'Book Antiqua', 'Palatino', serif;
+}
+span.rvts27
+{
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-weight: bold;
+ color: #00527f;
+}
+span.rvts28
+{
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-weight: bold;
+}
+span.rvts29
+{
+ font-size: 11pt;
+}
+span.rvts30
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ color: #00527f;
+}
+span.rvts31
+{
+}
+span.rvts32
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-style: italic;
+}
+span.rvts33
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-style: italic;
+}
+span.rvts34
+{
+ font-size: 12pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+}
+span.rvts35
+{
+ font-size: 12pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-weight: bold;
+ color: #00527f;
+}
+span.rvts36
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-weight: bold;
+ color: #00527f;
+}
+span.rvts37
+{
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-weight: bold;
+ color: #00527f;
+}
+span.rvts38
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ color: #bf0000;
+}
+span.rvts39
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-style: italic;
+ font-weight: bold;
+ color: #00527f;
+}
+span.rvts40
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ background-color: #ffffff;
+}
+span.rvts41
+{
+ font-size: 11pt;
+ font-family: 'Book Antiqua', 'Palatino', serif;
+ font-style: italic;
+ font-weight: bold;
+ color: #00527f;
+}
+span.rvts42
+{
+ font-size: 11pt;
+}
+span.rvts43
+{
+ font-size: 11pt;
+ font-weight: bold;
+ color: #6076b4;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+}
+.rvps3
+{
+ text-align: center;
+}
+.rvps4
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 0px 0px 16px 0px;
+}
+.rvps5
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.50;
+}
+.rvps6 /* Paragraph Style */
+{
+ text-align: center;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-left: none;
+ padding: 2px 0px 2px 0px;
+ margin: 7px 0px 7px 0px;
+}
+.rvps7
+{
+ line-height: 1.50;
+}
+.rvps8
+{
+ line-height: 1.50;
+}
+.rvps9
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.50;
+}
+.rvps10
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ line-height: 1.50;
+ margin: 0px 0px 0px 96px;
+}
+.rvps11
+{
+ margin: 0px 0px 0px 24px;
+}
+.rvps12
+{
+ margin: 16px 0px 0px 0px;
+}
+.rvps13
+{
+}
+.rvps14
+{
+ margin: 16px 0px 0px 96px;
+}
+.rvps15
+{
+ margin: 0px 0px 0px 48px;
+}
+.rvps16
+{
+ text-indent: 48px;
+ margin: 0px 0px 0px 456px;
+}
+.rvps17
+{
+ text-indent: 48px;
+}
+.rvps18
+{
+ text-indent: 48px;
+}
+.rvps19
+{
+ text-align: center;
+}
+.rvps20
+{
+ text-align: center;
+ margin: 0px 0px 0px 48px;
+}
+.rvps21
+{
+ margin: 0px 0px 0px 48px;
+}
+.rvps22
+{
+ text-indent: 48px;
+ margin: 0px 0px 0px 24px;
+}
+.rvps23
+{
+ margin: 0px 0px 0px 144px;
+}
+.rvps24
+{
+ margin: 0px 0px 0px 96px;
+}
+.rvps25
+{
+ margin: 0px 0px 0px 72px;
+}
+.rvps26
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+}
+.rvps27
+{
+ text-indent: 48px;
+ margin: 0px 0px 0px 96px;
+}
+.rvps28
+{
+ margin: 16px 0px 0px 0px;
+}
+.rvps29
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 72px;
+}
+.rvps30
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 120px;
+}
+.rvps31
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 48px;
+}
+.rvps32
+{
+ margin: 0px 0px 0px 72px;
+}
+.rvps33
+{
+ margin: 0px 0px 0px 96px;
+}
+.rvps34
+{
+ text-indent: 48px;
+ margin: 0px 0px 0px 480px;
+}
+.rvps35
+{
+ text-align: center;
+ margin: 0px 0px 0px 24px;
+}
+.rvps36
+{
+ margin: 0px 0px 0px 168px;
+}
+.rvps37
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 24px;
+}
+.rvps38
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 96px;
+}
+.rvps39
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+}
+.rvps40
+{
+ margin: 0px 0px 0px 24px;
+}
+.rvps41
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 34px;
+}
+.rvps42
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 10px;
+}
+.rvps43
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 48px;
+}
+.rvps44
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+ margin: 0px 0px 0px 100px;
+}
+.rvps45
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+}
+.rvps46
+{
+}
+.rvps47
+{
+ margin: 0px 0px 0px 24px;
+}
+.rvps48
+{
+ text-indent: -18px;
+ margin: 0px 0px 0px 18px;
+}
+.rvps49
+{
+ margin: 0px 0px 0px 24px;
+}
+.rvps50
+{
+ text-align: justify;
+ text-justify: inter-word;
+ text-align-last: auto;
+}
+.rvps51
+{
+ text-align: center;
+}
+.rvps52
+{
+ margin: 0px 0px 0px 120px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;}
+.list4 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;}
+.list5 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-roman;}
+.list6 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: lower-alpha;}
+.list7 {text-indent: 0px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;}
+.list8 {text-indent: 0px; padding: 0; margin: 0 0 0 72px; list-style-position: outside; list-style-type: lower-roman;}
+.list9 {text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: lower-alpha;}
+.list10 {text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: lower-roman;}
+.list11 {text-indent: 0px; padding: 0; margin: 0 0 0 60px; list-style-position: outside;}
+.list12 {text-indent: 0px; padding: 0; margin: 0 0 0 36px; list-style-position: outside;}
+.list13 {text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;}
+.list14 {text-indent: 0px; padding: 0; margin: 0 0 0 168px; list-style-position: outside; list-style-type: disc;}
+.list15 {text-indent: 0px; padding: 0; margin: 0 0 0 72px; list-style-position: outside; list-style-type: lower-alpha;}
+.list16 {text-indent: 0px; padding: 0; margin: 0 0 0 34px; list-style-position: outside; list-style-type: lower-roman;}
+.list17 {text-indent: 0px; padding: 0; margin: 0 0 0 38px; list-style-position: outside;}
+.list18 {text-indent: 0px; padding: 0; margin: 0 0 0 100px; list-style-position: outside; list-style-type: disc;}
+.list19 {text-indent: 0px; padding: 0; margin: 0 0 0 120px; list-style-position: outside; list-style-type: disc;}

@@ -1,0 +1,634 @@
+﻿/* cellpadding */
+th, td { padding: 0px; }
+
+/* cellspacing */
+table { border-collapse: collapse; border-spacing: 0; }   /* cellspacing="0" */
+
+th, td { vertical-align: top; }
+
+table { margin: 0 auto; }
+
+
+body, *, td, img, a
+{
+    margin: 0;
+    padding: 0;
+    
+    font-family: Arial;
+}
+img, a
+{
+    outline: 0;
+}
+input[type="checkbox"]
+{
+    margin: 0 3px 0 8px;
+    line-height: 190%;
+    vertical-align: middle;
+}
+body
+{
+    margin: 0 auto;
+    text-align: center;
+    width:100%;
+    background: #fff;
+}
+/*FineDocs ECM Main Wrapper 950px */
+.wrprmain
+{
+    width: 100%;
+    display: block;
+    margin: 0px auto 0px auto;
+    background: #13445d;
+    border: 0px solid #d67d14;
+}
+/*FineDocs ECM Header Wrapper 916px 143px */
+.wrprhdr
+{
+    width: 916px;
+    height: 143px;
+    position:relative;
+    top: -8px;
+    margin: 0 6px;
+    background: transparent url('../images/ALPS2.jpg') no-repeat top left;
+}
+.wrprhdr1
+
+{
+    font-size:30px;
+    font-family:@Arial Unicode MS; color:#d67d14; 
+    font-weight: normal;   
+    position:absolute;
+    top: 100px;
+    margin: 0 6px;
+    padding-left:300;
+   
+}
+.text1
+{
+    color:#d67d14;
+    /*font-weight:bold;*/
+    
+    }
+    .wrprhdr2
+
+{
+    font-size:30px;
+    font-family:@Arial Unicode MS; color:#d67d14; 
+    font-weight: normal;   
+    position:absolute;
+    top: 100px;
+    margin: 0 6px;
+    padding-left:250;
+   
+}
+.text2
+{
+    color:#d67d14;
+    
+    }
+.wrprhdr img
+
+{
+    margin: 22px 0 0 16px;
+    display: inline-block;
+    line-height: 200%;
+    vertical-align: middle;
+}
+   /*************************************************
+            LOGIN button  - By Anit
+*************************************************/
+.solutiontd
+{
+    padding:0px;
+    margin:0px;
+  }
+
+/*FineDocs ECM Navigation Wrapper*/
+.wrprnav
+{
+    width: 914px;
+    height: 25px;
+    margin: 0 6px;
+    background: transparent url('images/navbck.png') no-repeat top center;
+}
+/*FineDocs ECM Mid Wrapper*/
+.wrprctr
+{
+    display: block;
+    margin: 4px 0 4px 6px;
+}
+.wrprctr table
+{
+    border: 0 !important;
+}
+.wrprctrrow
+{
+    width: 916px;
+	height: 190px;
+	margin: 0;
+	background: transparent url('images/row2bck.png') no-repeat top center;
+}
+/*Login Form*/
+/*IE7 hacks*/
+*:first-child + html .wrprctrlog li.rrnbr
+{
+    display: inline;
+    padding: 0 1.1%;
+}
+@-moz-document url-prefix() /* hacked for Firefox / Mozilla */
+{
+    .wrprmain
+    {
+        width: 944px;
+    }
+    .wrprctrlog ul li
+    {
+        line-height: 136%;
+    }
+    .wrprctr .wrprctrrow .wrprctradd
+    {
+        width: 621px;
+        height: 181px;
+    }
+    .wrprctr .wrprctrrow2nd .wrprctrabt span
+    {
+        vertical-align: top;
+    }
+    .wrprctrlog .lblcls
+    {
+        width: 79px;
+    }
+    .wrprctr .wrprctrrow2nd .wrprctrnot .noticeblk
+    {
+        xdisplay: inline-block;
+    }
+}
+/*Chrome/Safari CSS hacks*/
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+{
+    .wrprctr .wrprctrrow .wrprctradd
+    {
+        width: 621px;
+        height: 181px;
+    }
+    .wrprctr .wrprctrrow2nd .wrprctrabt span
+    {
+        vertical-align: top;
+    }
+    .wrprctrlog .lblcls
+    {
+        width: 79px;
+    }
+    .noticeblk
+    {
+        
+    }
+}
+/*Opera CSS hacks*/
+@media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0) 
+{
+    .wrprmain
+    {
+        width: 944px;
+    }
+    .wrprctr .wrprctrrow .wrprctradd
+    {
+        width: 621px;
+        height: 181px;
+    }
+    .wrprctr .wrprctrrow2nd .wrprctrabt span
+    {
+        vertical-align: top;
+    }
+    .wrprctrlog .lblcls
+    {
+        width: 79px;
+    }
+    .wrprctr .wrprctrrow2nd .wrprctrnot .noticeblk
+    {
+        xdisplay: inline-block;
+    }
+}
+.wrprctr .wrprctrlog
+{
+    width: 250px;
+    height: 180px;
+    margin: 5px 9px 0 9px;
+    background: transparent url('../images/loginbck.png') no-repeat top left;
+}
+.wrprctrlog ul
+{
+    width: 96%;
+    margin: 0 0 0 4px;
+    padding: 0;
+}
+.wrprctrlog ul li
+{
+    height: auto;
+    display: inline-block;
+    list-style: none;
+    margin: .5% .7%;
+    padding: 0;
+    text-align: center;
+}
+.wrprctrlog li.rrnbr
+{
+    margin-left: 6px;
+    margin-right: 6px;
+    float: left;
+}
+.wrprctrlog li.rrnbr label
+{
+    position: relative;
+    top:-2px;
+}
+.wrprctrlog li, .wrprctrlog li.smlrow
+{
+    display: inline-block;
+    line-height: 180%;
+    vertical-align: middle;
+}
+/*************************************************
+                  LOGIN button - By anit
+*************************************************/
+
+.frmhelptxt
+{   color: #000;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    float: right;
+    padding-right:10px;
+    line-height: 220%;
+    vertical-align: middle;
+    white-space:nowrap;
+    }
+ 
+ .frmhelptxt a:link, a:visited
+{   color: #000;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    float: right;
+    padding-right:10px;
+    line-height: 220%;
+    vertical-align: middle;
+    white-space:nowrap;
+    } 
+    
+.frmheadtxt
+{   color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    float: left;
+    text-indent:5px;
+    line-height: 220%;
+    vertical-align: middle;
+    white-space:nowrap;
+    }
+ 
+ .frmheadtxt a:link, a:visited
+{   color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    float: left;
+    line-height: 220%;
+      text-indent:5px;
+    vertical-align: middle;
+    white-space:nowrap;
+    }  
+    
+.frmtxt
+{   color: #2f2c1d;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    /*float: left;*/
+    line-height: 220%;
+    vertical-align: middle;
+    white-space:nowrap;
+    }
+ 
+ .frmtxt a:link, a:visited
+{   color: #2f2c1d;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    float: left;
+    line-height: 220%;
+    vertical-align: middle;
+    white-space:nowrap;
+    }  
+ 
+    
+    /************************************************/
+.wrprctrlog li.smlrow
+{
+    line-height: 126%;
+}
+/*************************************************
+            Revised CSS - By Anit
+*************************************************/
+.wrprctrlog li.loghead
+{
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    float: left;
+    text-indent: 6px;
+    line-height: 220%;
+    vertical-align: middle;
+    white-space:nowrap;
+}
+.wrprctrlog li.loghead span
+{
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    float: left;
+    text-indent: 6px;
+    line-height: 220%;
+    vertical-align: middle;
+    white-space:nowrap;
+    width:200px;
+}
+/**************************************************/
+
+.wrprctrlog li.ffhlp
+{
+    display: block;
+    text-align: right;
+}
+.wrprctrlog li.ffhlp a
+{
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 5px 0 0;
+    line-height: 220%;
+    vertical-align: middle;
+}
+.wrprctrlog .inputtxt, .wrprctrlog input.inputtxt
+{
+    width: 116px;
+    color: #2f2c1d;
+    font-size: 11px;
+    font-weight: normal;
+    border: 1px solid #7e878f;
+}
+.wrprctrlog select.inputtxt
+{
+    margin: 0;
+    display: inline-block;
+}
+.wrprctrlog li label, .wrprctrlog li a
+{
+    color: #2f2c1d;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.wrprctrlog li.imgblk
+{
+    display: block;
+    margin-top: 0px;
+    text-align: center;
+}
+.wrprctrlog .lblcls
+{
+     width: 69px;
+    line-height:180%;
+    color: #2f2c1d;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: right;
+    margin-right: 35px;
+    display: inline-block;
+}
+/*************************************************
+  LOGIN button  - By Anit
+*************************************************/
+  .button_example  
+  {
+     width: 64px;
+     height:24px;
+     display:inline-block;
+     font-family:arial, helvetica, sans-serif;
+     font-size:11px; 
+     text-align:center;
+     line-height:20px;
+     color: #2f2c1d; 
+     text-decoration:none;
+     background: url("../images/loginbutton.png")  no-repeat scroll left top transparent
+         }
+  .button_example a:link{
+     width: 64px;
+     height:24px;
+     display:inline-block;
+     font-family:arial, helvetica, sans-serif;
+     font-size:11px; 
+     text-align:center;
+     line-height:20px;
+     color: #2f2c1d; 
+     text-decoration:none;
+     background: url("../images/loginbutton.png") no-repeat scroll left top transparent
+     
+     }
+     
+.button_example:hover{
+      width: 64px;
+     height:24px;
+     display:inline-block;
+     font-family:arial, helvetica, sans-serif;
+     font-size:11px; 
+     text-align:center;
+     /***line-height:20px;***/
+     color: #2f2c1d; 
+     text-decoration:none;
+      background: transparent url('../images/loginbutton.png') no-repeat middle center;
+     }
+     
+ /*************************************************/
+/*Sub Add*/
+.wrprctradd
+{
+ position: relative;
+ margin-top: 5px;
+ margin-left: 3px;
+ padding-left: 10px;
+ display:block;
+ overflow:hidden;
+ padding-top: 7px;
+ background: url('../images/abtFDECM.png') no-repeat top left;
+ border-bottom: none;
+ text-align:left;
+}
+.wrprctradd .txtbox
+{
+    height:183px;
+ }
+.wrprctradd p
+{
+    width: 96%;
+    color: #040000;
+    font-size: 12px;
+    line-height: 180%;
+    vertical-align: middle;
+    padding: 3px 0;
+     text-align:left;
+}
+.wrprctr .wrprctrrow2nd
+{
+    width: 916px;
+    display: inline-block;
+    margin-top: 4px;
+    background: #577888;
+}
+/*About FineDocs ECM*/
+.wrprctr .wrprctrrow2nd .wrprctrabt
+{
+    width: 248px;
+    height: 174px;
+    margin: 5px 8px 5px 9px;
+    line-height: 170%;
+    vertical-align: left;
+    text-indent: 3px;
+    background: #f3f3f3 url('../images/headeingbck.jpg') repeat-x top left;
+    border: 1px solid #020304;
+}
+
+.wrprctr .wrprctrrow2nd .wrprctrabt h1
+{
+    color: #fff;
+    font-size: 14px;
+    text-indent: 8px;
+}
+*:first-child + html .wrprctrabt span
+{    
+}
+.wrprctr .wrprctrrow2nd .wrprctrabt a
+{
+    width: 235px;
+    height: auto;
+    display: block;
+    margin: 3px 0 5px 6px;     
+    background: #c4d2db;
+    vertical-align: left;
+    text-decoration: none;
+}
+.wrprctr .wrprctrrow2nd .wrprctrabt a:hover
+{
+    text-decoration: none;
+    background: #cfe9f8;
+}
+.wrprctr .wrprctrrow2nd .wrprctrabt img
+{
+    margin: .6% 0;
+}
+.wrprctr .wrprctrrow2nd .wrprctrabt span
+{
+    color: #040000;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 11px;
+    display: inline;
+    position: relative;
+    top: 11px;
+}
+/*FineDocs ECM Notice*/
+/*************************************************
+  New code - by anit
+*************************************************/
+.wrprctrnot
+{
+    width: 634px;
+    height: 174px;
+    margin: 5px 0 0 3px;
+    line-height: 170%;
+    vertical-align: left;
+    padding-left: 17px;
+    background: transparent url('../images/noticesbck.png') no-repeat top left;
+    text-align:left;
+}
+.wrprctr .wrprctrrow2nd .wrprctrnot h1
+{
+    color: #fff;
+    font-size: 14px;
+    text-align:left;
+}
+.wrprctr .wrprctrrow2nd .wrprctrnot p, .wrprctr .wrprctrrow2nd .wrprctrnot h2.ntcshed, .wrprctr .wrprctrrow2nd .wrprctrnot span.ntcsdat, .wrprctr .wrprctrrow2nd .wrprctrnot .ntcsdes
+{
+    width: 96%;
+    color: #040000;
+    font-size: 12px;
+    line-height: 130%;
+    vertical-align: middle;
+    padding: 3px 0;
+}
+.wrprctr .wrprctrrow2nd .wrprctrnot .noticeblk
+{
+    width: 300px;
+    height: auto;
+    float: left;
+    margin: 3px 0 5px 0;
+    background: transparent;
+    overflow: hidden;
+}
+.wrprctr .wrprctrrow2nd .wrprctrnot h2.ntcshed
+{
+    color: #000;
+    margin: 6px 0 2px 0;
+    display: block;
+    line-height: 100%;
+    border-bottom: 1px solid #d6d9dc;
+}
+.wrprctr .wrprctrrow2nd .wrprctrnot h2.ntcshed a
+{
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.wrprctr .wrprctrrow2nd .wrprctrnot span.ntcsdat
+{
+    color: #5d5b5c;
+    font-size: 10px;
+    font-weight: normal;
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+/*RFB Footer Wrapper*/
+.wrprftr
+{
+    width: 916px;
+    height: 40px;
+    
+    margin: 0 auto -45px 6px;
+    background: transparent url('../images/ftrbck.png') no-repeat bottom left;
+}
+.wrprftr p
+{
+    color: #000;
+    font-size: 12px;
+    line-height: 260%;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+}

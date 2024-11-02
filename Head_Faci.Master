@@ -1,0 +1,592 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Head_Faci.Master.cs" Inherits="PresentationLayer.Head_Faci" %>
+
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="~/Styles/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="~/Styles/hamburgers.min.css">
+    <!-- DataTable -->
+    <link rel="stylesheet" href="./assets/dataTable/css/dataTables.bootstrap4.min.css">
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="assets/semantic.ui/semantic-ui-dropdown.min.css">
+    <link rel="stylesheet" href="assets/semantic.ui/semantic-ui-transition.min.css">
+    <link rel="stylesheet" href="~/Styles/style.css">
+    <!-- FullCalendarJs CSS -->
+    <link rel="stylesheet" href="~/assets/fullcalendarjs/main.min.css">
+
+    <!-- JQuery -->
+    <script src="/js/jquery.min.js"></script>
+
+    <title>B-Smart Academia</title>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <div class="back-drop"></div>
+
+    <form id="form1" runat="server">
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePartialRendering="true"
+            EnableViewState="true" EnablePageMethods="true">
+        </ajaxToolkit:ToolkitScriptManager>
+
+        <div class="container-fluid">
+            <header class="shadow fixed-top d-flex">
+                <div class="app-logo__toggle-btn d-flex">
+                    <div class="app-logo py-1">
+                        <div class="brand-logo"></div>
+                    </div>
+                    <div class="app-toggle pt-1">
+                        <div class="hamburger hamburger--spin p-2">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="school-title_box d-flex px-1">
+                    <h5 class="school-title mb-0 text-bsl">B-Smart Academia</h5>
+                    <p><asp:Label runat="server" ID="lbl_Sch"></asp:Label></p>
+                    <h5 class="school-title mb-0 d-none"><span>Welcome,&nbsp;<asp:Label runat="server"
+                                ID="lblUser_head">
+                            </asp:Label></span></h5>
+                </div>
+                <div class="d-flex align-items-center d-md-none px-2">
+                    <button id="btn-ellipsis" class="btn btn-biz_logic px-1">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <ul class="account-info nav d-none d-md-flex pr-4">
+                    <li>
+                        <asp:LinkButton runat="server" ID="lnkUguide" CausesValidation="false" OnClientClick="window.document.forms[0].target='_blank';" OnClick="lnkUguide_Click">
+                            <img class="w-25px h-25px" src="/Images/BOOK.ICO" alt="user_manual" />
+                        </asp:LinkButton>  
+                        <a class="image_control d-inline-block pr-2 links" data-toggle="dropdown">
+                            <span class="account-image d-inline-block">
+                                <asp:Image ImageUrl="~/images/male-user.png" runat="server" />
+                            </span>
+                            <span class="user-info d-none d-md-inline">
+                                <i class="fas fa-angle-down"></i>
+                                
+                            </span>
+                        </a>
+                        <div role="definition" aria-hidden="true" class="dropdown-menu">
+                            <!-- <button type="button" tabindex="0" class="dropdown-item">User Profile</button> -->
+                            <div class="px-3">
+                                <h6 class="mb-1">Login Time:</h6>
+                                <span class="small d-block">
+                                    <asp:Label runat="server" ID="lbl_Time"></asp:Label>
+                                </span>
+                            </div>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <asp:HyperLink NavigateUrl="~/Facili/Logout.aspx" ID="linkLogout" runat="server"
+                                TabIndex="0" CssClass="dropdown-item">Logout</asp:HyperLink>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="user-detail d-flex flex-column">
+                            <span class="user-name small"><asp:Label runat="server" ID="lbl_User"></asp:Label></span>
+                            <span class="user-name small"><asp:Label runat="server" ID="lbl_Role"></asp:Label></span>
+                            <asp:Label CssClass="user-name small" runat="server" ID="Label1"></asp:Label>
+                            <asp:Label CssClass="user-name small" runat="server" ID="Label2"></asp:Label>
+                            <asp:HyperLink NavigateUrl="~/Facili/Logout.aspx" ID="linkLogout1" runat="server"
+                                TabIndex="0" CssClass="dropdown-item d-md-none"><i class="fas fa-sign-out-alt"></i>
+                            </asp:HyperLink>
+                            <div class="separator d-md-none"></div>
+                            <div class="d-flex d-md-none">
+                                <span class="user-name small">Login Time:</span>
+                                <span id="loginTime" class="small ml-1"></span>
+                            </div>
+                        </span>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </header>
+
+            <%-- ############################################################################################################ --%>
+            <%-- ############################################################################################################ --%>
+            <%-- ########################          [CODE BLOCK CAUSED ERROR WHILE IMPLEMENTING]          #################### --%>
+            <%-- ############################################################################################################ --%>
+            <%-- ############################################################################################################ --%>
+
+
+            <span class="d-none">
+                
+            </span>
+
+
+            <%-- ############################################################################################################ --%>
+            <%-- ############################################################################################################ --%>
+            <%-- ##############################################     [THE END]       ######################################### --%>
+            <%-- ############################################################################################################ --%>
+            <%-- ############################################################################################################ --%>
+
+            <div class="row">
+                <div class="sidebar shadow">
+                    <ul class="app-menu nav flex-column px-1 pt-2">
+                        <asp:Literal runat="server" ID="litDesign"></asp:Literal>
+                       <!-- <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="HvL7a8">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/monitor.svg"
+                                    runat="server" />
+                                <span class="app-link__text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="zZWJKa">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/slack.svg"
+                                    runat="server" /> <span class="app-link__text">University/College/School Data Logs</span></a></li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="4gD1mD">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/user-x.svg"
+                                    runat="server" /> <span class="app-link__text">Block/UnBlock User</span></a></li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="aZd2v3">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/repeat.svg"
+                                    runat="server" /> <span class="app-link__text">Resend User Credentials</span></a>
+                        </li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="aZDD2v3">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/key.svg"
+                                    runat="server" /> <span class="app-link__text">Reset Password</span></a></li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="bzf4ZG">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/edit.svg"
+                                    runat="server" /> <span class="app-link__text">Edit Student Details</span></a></li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="yEMUOU">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/eye.svg"
+                                    runat="server" /> <span class="app-link__text">View/Update University/College/School Info</span></a>
+                        </li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="BEmueF">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/user-plus.svg"
+                                    runat="server" /> <span class="app-link__text">Student Registration
+                                    Upload</span></a></li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="BBmueF">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/user-plus.svg"
+                                    runat="server" /> <span class="app-link__text">Student Registration
+                                    Individual</span></a></li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="sIBEGy">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/upload.svg"
+                                    runat="server" /> <span class="app-link__text">Fee Data Upload</span></a></li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="ZIBEGy">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/upload-cloud.svg"
+                                    runat="server" /> <span class="app-link__text">Fee Data Individual</span></a></li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="HPATuQ">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/printer.svg"
+                                    runat="server" /> <span class="app-link__text">Print/Send Invoice</span></a></li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="HPAZZQ">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/printer.svg"
+                                    runat="server" /> <span class="app-link__text">Print/Send Receipt</span></a></li>
+                        <li class="app-nav__item"><a class="links app-link app-link__dropdown position-relative"
+                                href="HPATZQ">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/arrow-up-circle.svg"
+                                    runat="server" /> <span class="app-link__text">Class Uplift</span></a></li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/schoolbus.png"
+                                    runat="server" />
+                                <span class="app-link__text">Student Transport</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="amf100">Driver Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf101">Attender Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf102">Vehicle Diary Type</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf103">Vehicles</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf104">Routes</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf105">Vehicle Route Allocations</a>
+                                </li>
+                                <li><a class="links dp__app-link d-block" href="amf106">Student Transport Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/book.svg"
+                                    runat="server" />
+                                <span class="app-link__text">Library</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="amf107">Library Location</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf108">Rack shelf</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf109">Books</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf110">Books Openings</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf111">Books Receive Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf112">Teachers Books Issue</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf113">Student Books Issue</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf114">Books Transfer Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf115">Return Books</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf161">Books Disposal</a></li>
+                            </ul>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown d-flex position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/check-square.svg"
+                                    runat="server" />
+                                <span class="app-link__text">Approvals</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="ESOkMa">University/College/School Info</a></li>
+                                <li><a class="links dp__app-link d-block" href="yGB3Ir">Classes</a></li>
+                                <li><a class="links dp__app-link d-block" href="0CoF23">Sections</a></li>
+                                <li><a class="links dp__app-link d-block" href="umXzkn">Allocations</a></li>
+                                <li><a class="links dp__app-link d-block" href="PacX9U">Students</a></li>
+                                <li><a class="links dp__app-link d-block" href="KzHqEz">Fee</a></li>
+                                <li><a class="links dp__app-link d-block" href="L6GJl9">Student Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="40u9iv">Students Deletion</a></li>
+                                <li><a class="links dp__app-link d-block" href="90u9iv">Fee Deletion</a></li>
+                                <li><a class="links dp__app-link d-block" href="ZZPATZQ">Class Uplift</a></li>
+                                <li><a class="links dp__app-link d-block" href="RPATZQ">Class Uplift Return</a></li>
+                                <li><a class="links dp__app-link d-block" href="B00EeF">Fee Structure</a></li>
+                                <li><a class="links dp__app-link d-block" href="B33EeF">Fee Structure Return</a></li>
+                                <li><a class="links dp__app-link d-block" href="az13ZQ">Subjects</a></li>
+                                <li><a class="links dp__app-link d-block" href="Pn0vrz">Exams</a></li>
+                                <li><a class="links dp__app-link d-block" href="1a8A4Z">Teachers</a></li>
+                                <li><a class="links dp__app-link d-block" href="az01cz">Grade</a></li>
+                                <li><a class="links dp__app-link d-block" href="onh6AM">Holidays</a></li>
+                                <li><a class="links dp__app-link d-block" href="mO2A1C">Timings Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="mwveSC">Time Table Approve</a></li>
+                            </ul>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/sliders.svg"
+                                    runat="server" />
+                                <span class="app-link__text">Setup</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="TaI5tH">Class</a></li>
+                                <li><a class="links dp__app-link d-block" href="ipP72H">Section</a></li>
+                                <li><a class="links dp__app-link d-block" href="W5Gmrx">Allocation</a></li>
+                                <li><a class="links dp__app-link d-block" href="H393ZQ">Subjects</a></li>
+                                <li><a class="links dp__app-link d-block" href="az17rz">Grades</a></li>
+                                <li><a class="links dp__app-link d-block" href="Pns1cz">Exams</a></li>
+                                <li><a class="links dp__app-link d-block" href="1aB9Xr">Teachers</a></li>
+                                <li><a class="links dp__app-link d-block" href="onhvrz">Holidays</a></li>
+                                <li><a class="links dp__app-link d-block" href="mO2zET">Period Timings</a></li>
+                                <li><a class="links dp__app-link d-block" href="A8NeSC">Time Table</a></li>
+                                <li><a class="links dp__app-link d-block" href="BEmEeF">Fee Structure</a></li>
+                                <li><a class="links dp__app-link d-block" href="anjnOh">User Creation</a></li>
+                                <li><a class="links dp__app-link d-block" href="XFpkkH">Change Password</a></li>
+                            </ul>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/check-circle.svg"
+                                    runat="server" />
+                                <span class="app-link__text">Transport Approvals</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="amf116">Drivers Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf117">Attendant Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf118">Vehicle Diary Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf119">Routes Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf121">Vehicles Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf123">Vehicles Route Allocation</a>
+                                </li>
+                                <li><a class="links dp__app-link d-block" href="amf125">Student Transport Approve</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/check.svg"
+                                    runat="server" />
+                                <span class="app-link__text">Library Approvals</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="amf127">Library Location Approve</a>
+                                </li>
+                                <li><a class="links dp__app-link d-block" href="amf128">Rack Shelf Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf130">Books Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf131">Books Openings Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf133">Student Books Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf134">Books Transfer Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf136">Teachers Books Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf138">Books Receive Approve</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf162">Books Disposal Approve</a></li>
+                            </ul>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/file-text.svg"
+                                    runat="server" />
+                                <span class="app-link__text">Library Report</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="amf140">Library Location Report</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf141">Rack &amp; Shelf Report</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf142">Books Details Report</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf143">Book Internal Location
+                                        Report</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf144">Book Recieve Report</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf145">Book Issue to Student</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf146">Book Issue to Teacher</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf147">Books Stock</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf164">Books Disposal Report</a></li>
+                            </ul>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/file.svg"
+                                    runat="server" />
+                                <span class="app-link__text">Transport Reports</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="amf148">Driver Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf149">Attendant Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf150">Vehicle </a></li>
+                                <li><a class="links dp__app-link d-block" href="amf151">Vehicle Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="RouteReports.aspx">Route Details</a>
+                                </li>
+                                <li><a class="links dp__app-link d-block" href="amf153">Allocation Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf154">Student Wise Report</a></li>
+                            </ul>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/file-text.svg"
+                                    runat="server" />
+                                <span class="app-link__text">Report</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="Rzo3i0">Student Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="wbwF3c">Fee Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="6i47sV">Payment Details</a></li>
+                                <li><a class="links dp__app-link d-block" href="BLjKAM">Fee Balance</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf155">Results With Subjects</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf156">Results</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf157">Time Table</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf158">Attendance</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf159">Teachers</a></li>
+                                <li><a class="links dp__app-link d-block" href="amf160">Teacher Time Table</a></li>
+                            </ul>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/assets/feather/clipboard.svg"
+                                    runat="server" />
+                                <span class="app-link__text">Audit Trail</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="VtfEIe">Class</a></li>
+                                <li><a class="links dp__app-link d-block" href="FvuXzu">Section</a></li>
+                                <li><a class="links dp__app-link d-block" href="zKf5T3">Allocation</a></li>
+                                <li><a class="links dp__app-link d-block" href="STI1sX">University/College/School Users</a></li>
+                                <li><a class="links dp__app-link d-block" href="6DrEQk">Students</a></li>
+                                <li><a class="links dp__app-link d-block" href="9Siiro">Fee Data</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="app-main d-flex flex-column">
+                    <div class="main-area">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="footer px-2">
+                        <p class="mb-0 small"><asp:Label runat="server" ID="lblBSA"></asp:Label></p>
+                    </div>
+                </div>
+            </div>
+    </form>
+
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- DataTable -->
+    <script src="../assets/dataTable/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/dataTable/js/dataTables.bootstrap4.min.js"></script>
+
+    <script src="../js/date-eu.js"></script>
+    <script src="../js/jquery.mobilePhoneNumber.js"></script>
+    <script src="../js/jquery.caret.js"></script>
+
+    <!-- Datepicker -->
+    <script src="../assets/fullcalendarjs/main.min.js"></script>
+
+    <script src="../js/numeral.min.js"></script>
+
+    <!-- ChartJS -->
+    <script src="../js/chart.min.js"></script>
+
+    <script src="../js/script.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            var forEach = function (t, o, r) {
+                if ("[object Object]" === Object.prototype.toString.call(t))
+                    for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+                else
+                    for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
+            };
+
+            var hamburgers = document.querySelectorAll(".hamburger");
+            if (hamburgers.length > 0) {
+                forEach(hamburgers, function (hamburger) {
+                    hamburger.addEventListener("click", function () {
+                        this.classList.toggle("is-active");
+                    }, false);
+                });
+            }
+
+            var sidebar = document.querySelector('.sidebar');
+            var body = document.querySelector('body');
+            var backDrop = document.querySelector('.back-drop');
+            var dropdownLists = $('.app-nav__dropdown');
+            var dropDownLinks = $('.app-link__dropdown');
+            hamburgers[0].addEventListener('click', function () {
+                if (window.innerWidth < 992) {
+                    if (window.innerWidth < 768 && $('.account-info')
+                        .hasClass('active')) {
+                        sidebar.classList.toggle('show');
+                        body.classList.toggle('modal-open');
+                        $('.account-info').removeClass('active');
+                    } else {
+                        sidebar.classList.toggle('show');
+                        body.classList.toggle('modal-open');
+                        backDrop.classList.toggle('show');
+                    }
+
+                    if (!sidebar.classList.contains('show')) {
+                        $(dropdownLists).css('display', 'none');
+                        $(dropDownLinks).removeClass('active');
+                    }
+                }
+
+                if (window.innerWidth >= 1248) {
+                    sidebar.classList.toggle('show');
+                    $(dropdownLists).css('display', 'none');
+                    $(dropDownLinks).removeClass('active');
+
+                    if (sidebar.classList.contains('show')) {
+                        sidebar.addEventListener('mouseenter', function () {
+                            sidebar.classList.add('show-sm');
+                        });
+                        sidebar.addEventListener('mouseleave', function () {
+                            sidebar.classList.remove('show-sm');
+
+                            if (sidebar.classList.contains("show") === true) {
+                                $(dropdownLists).css('display', 'none');
+                                $(dropDownLinks).removeClass('active');
+                            }
+                        });
+                    }
+                }
+
+            });
+
+            var lists = sidebar.querySelectorAll('.app-nav__item');
+
+            var listsArray = Array.prototype.slice.call(lists);
+            listsArray.forEach(function (list) {
+                list.addEventListener('click', function () {
+                    if (window.innerWidth >= 992 && window.innerWidth < 1248) {
+                        sidebar.classList.add("show-lite");
+
+                        if (sidebar.classList.contains("show-lite")) {
+                            window.addEventListener('click', function (e) {
+                                if (e.target.classList.contains('link-thumbnail') ||
+                                    e.target.classList.contains('app-link__text') ||
+                                    e.target.classList.contains('dropdown-icon') ||
+                                    e.target.classList.contains('fa-angle-down') ||
+                                    e.target.classList.contains('app-link') ||
+                                    e.target.classList.contains('app-nav__item') ||
+                                    e.target.classList.contains('app-menu') ||
+                                    e.target === sidebar
+                                ) {
+                                    return;
+                                } else {
+                                    sidebar.classList.remove("show-lite");
+
+                                    if (sidebar.classList.contains("show-lite") ===
+                                        false) {
+                                        $(dropdownLists).css('display', 'none');
+                                        $(dropDownLinks).removeClass('active');
+                                    }
+                                }
+                            });
+                        }
+
+
+                    }
+                });
+                // var itemLinks = list.querySelectorAll('.app-link__dropdown');
+            });
+
+            window.addEventListener('resize', function () {
+                // If backdrop and modal-open are active on larger screen, Remove them
+                if ((window.innerWidth >= 992) && (hamburgers[0].classList.contains('is-active'))) {
+                    hamburgers[0].classList.remove('is-active');
+                    body.classList.remove('modal-open');
+                    backDrop.classList.remove('show');
+                    sidebar.classList.remove('show');
+                }
+            });
+
+            // click on the backdrop
+            backDrop.addEventListener('click', function () {
+                hamburgers[0].classList.remove('is-active');
+                body.classList.remove('modal-open');
+                backDrop.classList.remove('show');
+                sidebar.classList.remove('show');
+
+                if (!sidebar.classList.contains('show')) {
+                    $(dropdownLists).css('display', 'none');
+                    $(dropDownLinks).removeClass('active');
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

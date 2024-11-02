@@ -1,0 +1,176 @@
+﻿body
+{
+    font-size: 12px;
+}
+.red
+{
+    color: Red;
+}
+.transbutn
+{
+    background: transparent;
+    border: 0px;
+}
+.tabhd1, tabhdHr1
+{
+    background-color: #889cb1 !important;
+    height: 27px;
+    width: 103px;
+    margin: 5px 0px 0px 0px;
+    /*padding: 2px 10px 2px 10px;*/
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 12px;
+    border: 0px;
+    font-weight: bold;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    color: #fff;
+    line-height: 35px;
+    vertical-align: middle;
+}
+.tabhdHr1
+{
+    background-color: #ededed !important;
+    height: 27px;
+    width: 88px;
+    margin: 5px 0px 0px 0px;
+    /*padding: 2px 10px 2px 10px;*/
+     padding: 2px 5px 2px 5px;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 12px;
+    border: 0px;
+    font-weight: bold;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    color: #4e667f;
+    line-height: 35px;
+    vertical-align: middle;
+}
+.tabhdhov1
+{
+    background-color: #ededed;
+    height: 27px;
+    width: auto;
+    display: inline-block;
+    margin: 5px 0px 0px 0px;
+    padding: 2px 15px 2px 15px;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    font-family: Arial;
+    background-position: left;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    border: 0px;
+    color: #4e667f;
+    line-height: 24px;
+}
+.lblalign
+{
+    vertical-align: middle;
+    text-align: left;
+    height: 21px;
+    width: 190px;
+}
+.lblalignnew
+{
+    vertical-align: middle;
+    text-align: left;
+    height: 21px;
+    width: 220px;
+}
+.ctrlalign
+{
+    text-align: left;
+    width: 190px;
+    vertical-align: middle;
+}
+
+.transbutn
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    background: transprant;
+    display: block;
+}
+.btnfooternav
+{
+    background-color: #d1dde7;
+}
+.tdAllBorder
+{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.tdNoLeft
+{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 0px;
+    border-right: 1px solid black;
+}
+.tdNotop
+{
+    border-bottom: 1px solid black;
+    border-top: 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.tdNotopleft
+{
+    border-bottom: 1px solid black;
+    border-top-width: 0px;
+    border-left: 0px;
+    border-right: 1px solid black;
+}
+.moneytext
+{
+    text-align: right;
+    padding: 2px;
+}
+.Rptdesc
+{
+    width: 250px;
+    text-align: left;
+}
+.Rptnormal
+{
+    width: 150px;
+    text-align: left;
+}
+.Rptdate
+{
+    width: 80px;
+    text-align: left;
+}
+
+.Rptamount
+{
+    width: 100px;
+    text-align: right;
+}
+.GridCssStyle
+{
+    color: #1f5ca9;
+    background-color: #c5d4e6;
+    table-layout: auto;
+    border-collapse: separate;
+    border-right: gray thin solid;
+    border-top: gray thin solid;
+    border-left: gray thin solid;
+    border-bottom: gray thin solid;
+    text-align: center;
+}

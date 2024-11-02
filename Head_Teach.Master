@@ -1,0 +1,377 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Head_Teach.Master.cs" Inherits="PresentationLayer.Head_Teach" %>
+
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="~/Styles/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="~/Styles/hamburgers.min.css">
+    <!-- DataTable -->
+    <link rel="stylesheet" href="./assets/dataTable/css/dataTables.bootstrap4.min.css">
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="assets/semantic.ui/semantic-ui-dropdown.min.css">
+    <link rel="stylesheet" href="assets/semantic.ui/semantic-ui-transition.min.css">
+    <link rel="stylesheet" href="~/Styles/style.css">
+
+    <!-- JQuery -->
+    <script src="/js/jquery.min.js"></script>
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 15%;
+            height: 23px;
+            background-color: #d9d6d6;
+        }
+
+        .auto-style2 {
+            width: 100%;
+            height: 30px;
+            padding: 0 0 0 10px;
+        }
+
+        .auto-style3 {
+            width: 5%;
+        }
+
+        #cssmenu {
+            width: 93px;
+        }
+
+        .auto-style4 {
+            width: 15%;
+        }
+    </style>
+
+    <title>B-Smart Academia</title>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <div class="back-drop"></div>
+
+    <form id="form1" runat="server">
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePartialRendering="true"
+            EnableViewState="true" EnablePageMethods="true">
+        </ajaxToolkit:ToolkitScriptManager>
+
+        <div class="container-fluid">
+            <header class="shadow fixed-top d-flex">
+                <div class="app-logo__toggle-btn d-flex">
+                    <div class="app-logo py-1">
+                        <div class="brand-logo"></div>
+                    </div>
+                    <div class="app-toggle pt-1">
+                        <div class="hamburger hamburger--spin p-2">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="school-title_box d-flex px-1">
+                    <h5 class="school-title mb-0 text-bsl">B-Smart Academia</h5>
+                    <!--<p>NguzoNane Primary School/College</p>-->
+                    <h5 class="school-title mb-0"><span>Welcome,&nbsp;<asp:Label runat="server"
+                                ID="lblUser_head">
+                            </asp:Label></span></h5>
+                </div>
+                <div class="d-flex align-items-center d-md-none px-2">
+                    <button id="btn-ellipsis" class="btn btn-biz_logic px-1">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <ul class="account-info nav d-none d-md-flex pr-4">
+                    <li>
+                        <asp:LinkButton runat="server" ID="lnkUguide" CausesValidation="false" OnClientClick="window.document.forms[0].target='_blank';" OnClick="lnkUguide_Click">
+                            <img class="w-25px h-25px" src="/Images/BOOK.ICO" alt="user_manual" />
+                        </asp:LinkButton> 
+                        <a class="image_control d-inline-block pr-2 links" data-toggle="dropdown">
+                            <span class="account-image d-inline-block">
+                                <asp:Image ImageUrl="~/images/male-user.png" runat="server" />
+                            </span>
+                            <span class="user-info d-none d-md-inline">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <div role="definition" aria-hidden="true" class="dropdown-menu">
+                            <!-- <button type="button" tabindex="0" class="dropdown-item">User Profile</button> -->
+                            <div class="px-3">
+                                <h6 class="mb-1">Login Time:</h6>
+                                <span class="small d-block">
+                                    <asp:Label runat="server" ID="lbl_Time"></asp:Label>
+                                </span>
+                            </div>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <asp:HyperLink NavigateUrl="/Teach/Logout.aspx" ID="linkLogout" runat="server"
+                                TabIndex="0" CssClass="dropdown-item">Logout</asp:HyperLink>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="user-detail d-flex flex-column">
+                            <span class="user-name small"><asp:Label runat="server" ID="lbl_User"></asp:Label></span>
+                            <span class="user-name small"><asp:Label runat="server" ID="Label2">Teacher</asp:Label></span>
+                            <asp:Label CssClass="user-name small" runat="server" ID="Label1"></asp:Label>
+                            <!--<span class="user-designation small">UI Designer
+                            </span>-->
+                            <asp:HyperLink NavigateUrl="~/Teach/Logout.aspx" ID="linkLogout1" runat="server"
+                                TabIndex="0" CssClass="dropdown-item d-md-none"><i class="fas fa-sign-out-alt"></i>
+                            </asp:HyperLink>
+                            <div class="separator d-md-none"></div>
+                            <div class="d-flex d-md-none">
+                                <span class="user-name small">Login Time:</span>
+                                <span id="loginTime" class="small ml-1"></span>
+                            </div>
+                        </span>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </header>
+
+            <%-- ############################################################################################################ --%>
+            <%-- ############################################################################################################ --%>
+            <%-- ########################          [CODE BLOCK CAUSED ERROR WHILE IMPLEMENTING]          #################### --%>
+            <%-- ############################################################################################################ --%>
+            <%-- ############################################################################################################ --%>
+
+
+            <span class="d-none">
+                
+            </span>
+
+
+            <%-- ############################################################################################################ --%>
+            <%-- ############################################################################################################ --%>
+            <%-- ##############################################     [THE END]       ######################################### --%>
+            <%-- ############################################################################################################ --%>
+            <%-- ############################################################################################################ --%>
+
+            <div class="row">
+                <div class="sidebar shadow">
+                    <ul class="app-menu nav flex-column px-1 pt-2">
+                        <asp:Literal runat="server" ID="litDesign"></asp:Literal>
+                        <!--<li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="HvL7a8">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/images/dashboard-icon.png"
+                                    runat="server" />
+                                <span class="app-link__text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/images/module-32.png" runat="server" />
+                                <span class="app-link__text">Modules</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="on91BM">Results</a></li>
+                                <li><a class="links dp__app-link d-block" href="ad5bBM">Attendance</a></li>
+                                <li><a class="links dp__app-link d-block" href="XFpkkH">Change Password</a></li>
+                            </ul>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/images/approval-32.png"
+                                    runat="server" />
+                                <span class="app-link__text">Approvals</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="9xq1BM">Results</a></li>
+                                <li><a class="links dp__app-link d-block" href="ad91ZM">Attendance</a></li>
+                            </ul>
+                        </li>
+                        <li class="app-nav__item">
+                            <a class="links app-link app-link__dropdown position-relative" href="#">
+                                <asp:Image CssClass="link-thumbnail" ImageUrl="~/images/reports-32.png"
+                                    runat="server" />
+                                <span class="app-link__text">Reports</span>
+                                <span class="dropdown-icon position-absolute">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="app-nav__dropdown px-2 list-unstyled" aria-labelledby="my-dropdown">
+                                <li><a class="links dp__app-link d-block" href="Results_M_Report.aspx">Results With
+                                        Subjects</a></li>
+                                <li><a class="links dp__app-link d-block" href="Results_Report.aspx">Results</a></li>
+                                <li><a class="links dp__app-link d-block" href="TimeT_Report.aspx">Timetable</a></li>
+                                <li><a class="links dp__app-link d-block" href="Attendance_Report.aspx">Attendance</a>
+                                </li>
+                                <li><a class="links dp__app-link d-block" href="ClsTea_Report.aspx">Teachers</a></li>
+                                <li><a class="links dp__app-link d-block" href="Teachers_P_Report.aspx">Teacher Time
+                                        Table</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="app-main d-flex flex-column">
+                    <div class="main-area">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="footer px-2">
+                        <p class="mb-0 small"><asp:Label runat="server" ID="lblBSA"></asp:Label></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- DataTable -->
+    <script src="../assets/dataTable/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/dataTable/js/dataTables.bootstrap4.min.js"></script>
+
+
+    <!-- ChartJS -->
+    <script src="../js/chart.min.js"></script>
+
+    <script src="../js/script.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            var forEach = function (t, o, r) {
+                if ("[object Object]" === Object.prototype.toString.call(t))
+                    for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+                else
+                    for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
+            };
+
+            var hamburgers = document.querySelectorAll(".hamburger");
+            if (hamburgers.length > 0) {
+                forEach(hamburgers, function (hamburger) {
+                    hamburger.addEventListener("click", function () {
+                        this.classList.toggle("is-active");
+                    }, false);
+                });
+            }
+
+            var sidebar = document.querySelector('.sidebar');
+            var body = document.querySelector('body');
+            var backDrop = document.querySelector('.back-drop');
+            var dropdownLists = $('.app-nav__dropdown');
+            var dropDownLinks = $('.app-link__dropdown');
+            hamburgers[0].addEventListener('click', function () {
+                if (window.innerWidth < 992) {
+                    if (window.innerWidth < 768 && $('.account-info')
+                        .hasClass('active')) {
+                        sidebar.classList.toggle('show');
+                        body.classList.toggle('modal-open');
+                        $('.account-info').removeClass('active');
+                    } else {
+                        sidebar.classList.toggle('show');
+                        body.classList.toggle('modal-open');
+                        backDrop.classList.toggle('show');
+                    }
+
+                    if (!sidebar.classList.contains('show')) {
+                        $(dropdownLists).css('display', 'none');
+                        $(dropDownLinks).removeClass('active');
+                    }
+                }
+
+                if (window.innerWidth >= 1248) {
+                    sidebar.classList.toggle('show');
+                    $(dropdownLists).css('display', 'none');
+                    $(dropDownLinks).removeClass('active');
+
+                    if (sidebar.classList.contains('show')) {
+                        sidebar.addEventListener('mouseenter', function () {
+                            sidebar.classList.add('show-sm');
+                        });
+                        sidebar.addEventListener('mouseleave', function () {
+                            sidebar.classList.remove('show-sm');
+
+                            if (sidebar.classList.contains("show") === true) {
+                                $(dropdownLists).css('display', 'none');
+                                $(dropDownLinks).removeClass('active');
+                            }
+                        });
+                    }
+                }
+
+            });
+
+            var lists = sidebar.querySelectorAll('.app-nav__item');
+
+            var listsArray = Array.prototype.slice.call(lists);
+            listsArray.forEach(function (list) {
+                list.addEventListener('click', function () {
+                    if (window.innerWidth >= 992 && window.innerWidth < 1248) {
+                        sidebar.classList.add("show-lite");
+
+                        if (sidebar.classList.contains("show-lite")) {
+                            window.addEventListener('click', function (e) {
+                                if (e.target.classList.contains('link-thumbnail') ||
+                                    e.target.classList.contains('app-link__text') ||
+                                    e.target.classList.contains('dropdown-icon') ||
+                                    e.target.classList.contains('fa-angle-down') ||
+                                    e.target.classList.contains('app-link') ||
+                                    e.target.classList.contains('app-nav__item') ||
+                                    e.target.classList.contains('app-menu') ||
+                                    e.target === sidebar
+                                ) {
+                                    return;
+                                } else {
+                                    sidebar.classList.remove("show-lite");
+
+                                    if (sidebar.classList.contains("show-lite") ===
+                                        false) {
+                                        $(dropdownLists).css('display', 'none');
+                                        $(dropDownLinks).removeClass('active');
+                                    }
+                                }
+                            });
+                        }
+
+
+                    }
+                });
+                // var itemLinks = list.querySelectorAll('.app-link__dropdown');
+            });
+
+            window.addEventListener('resize', function () {
+                // If backdrop and modal-open are active on larger screen, Remove them
+                if ((window.innerWidth >= 992) && (hamburgers[0].classList.contains('is-active'))) {
+                    hamburgers[0].classList.remove('is-active');
+                    body.classList.remove('modal-open');
+                    backDrop.classList.remove('show');
+                    sidebar.classList.remove('show');
+                }
+            });
+
+            // click on the backdrop
+            backDrop.addEventListener('click', function () {
+                hamburgers[0].classList.remove('is-active');
+                body.classList.remove('modal-open');
+                backDrop.classList.remove('show');
+                sidebar.classList.remove('show');
+
+                if (!sidebar.classList.contains('show')) {
+                    $(dropdownLists).css('display', 'none');
+                    $(dropDownLinks).removeClass('active');
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>
